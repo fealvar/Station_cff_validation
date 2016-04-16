@@ -5,11 +5,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.station.cff.database.DataBaseUtility;
+import com.station.cff.webservice.WebserviceCall;
 
 public class cff_validation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		WebserviceCall.login();
+		
+		
 		
 		try {
 			Connection connection = DataBaseUtility.getConnection();
